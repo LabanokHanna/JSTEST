@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JSTest3</title>
+</head>
+<body>
+	<script type="text/javascript">
+var now = new Date();
+year = now.getFullYear();
+month = now.getMonth();
+date = now.getDate();
+
+var today = new Date(year, month, date),
+    tomorrow = new Date(year, month, date + 1),
+    forEndDay = +(tomorrow - now) / 1000;
+
+document.write(Math.round(forEndDay));
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JSTest3</title>
+</head>
+<body>
+<script type="text/javascript">
+var myArray= [-2, -120, 18, 130, 0, 3];
+  min = myArray[0];
+  max = min;
+  for (i = 1; i < myArray.length; ++i) {
+      if (myArray[i] > max) max = myArray[i];
+      if (myArray[i] < min) min = myArray[i];
+  }
+ document.write(max);
+document.write('</br>');
+document.write(min);
+</script>
+
+</body>
+</html>
